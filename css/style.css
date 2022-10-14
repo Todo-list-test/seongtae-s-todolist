@@ -1,0 +1,131 @@
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.todo-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-wrapper .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.todo-box {
+  background-color: white;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.todo-input-box {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo-input {
+  width: 80%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 0;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.todo-item {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-item {
+  background-color: lightgray;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.todo-item:hover .delBtn {
+  opacity: 1;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  margin: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.todo-item.checked .checkbox {
+  border: 2px solid darkgray;
+  color: green;
+}
+
+.todo {
+  font-size: 1rem;
+  width: 80%;
+}
+
+.todo-item.checked .todo {
+  font-style: italic;
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.delBtn {
+  opacity: 1;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.edit-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 590px;
+  height: 2.8rem;
+  margin: 0;
+}
